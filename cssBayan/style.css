@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-top: 2rem;
     margin-bottom: 1.8rem;
 }
@@ -19,10 +19,9 @@ label {
 }
 
 .container {
-    width: 60vw;
+    width: 70vw;
     margin: 0 auto;
     height: 105vw;
-    z-index: 1;
 }
 
 .bayan-img {
@@ -70,10 +69,12 @@ label {
     
     .bayan:hover ~ .bayan-label {
         color: black;
+        transition: 0.8s;
     }
 
     .container:hover .bayan-label {
         color: black;
+        transition: 0.8s;
     }
 
     .bayan:hover ~ .bayan-label .plus {
@@ -84,5 +85,29 @@ label {
 
     .container:hover .bayan-label .plus {
         width: 1.1rem;
+        transition: 0.8s;
+    }
+}
+
+@media (max-width: 320px){
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+    }
+
+    label {
+        font-size: 0.7rem;
+    }
+
+    .bayan:checked ~ .bayan-content .bayan-img {
+        max-width: 80%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bayan:checked ~ .bayan-label .plus {
+        width: 0.7rem;
+        transform: rotate(45deg);
+        transition: 0.8s;
     }
 }
