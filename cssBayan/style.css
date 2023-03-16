@@ -37,7 +37,7 @@ label {
     display: none;
 }
 
-.bayan:checked ~ .bayan-content .bayan-img {
+.bayan:checked ~ .bayan-content .bayan-img{
     max-width: 60%;
     margin-top: 1.9rem;
     margin-bottom: 1.6rem;
@@ -87,9 +87,15 @@ label {
         width: 1.1rem;
         transition: 0.8s;
     }
+
+    .bayan-content:hover .bayan-img {
+        max-width: 60%;
+        margin-top: 1.9rem;
+        margin-bottom: 1.6rem;
+    }
 }
 
-@media (max-width: 19200px){
+@media (max-width: 1920px){
     h1 {
         font-size: 6rem;
         margin-top: 5rem;
