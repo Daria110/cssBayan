@@ -55,6 +55,10 @@ label {
     opacity: 0.7;
 }
 
+.bayan:checked ~ .bayan-label .plus { 
+    transform: rotate(45deg);
+}
+
 @media (hover: hover) {
     .bayan:hover ~ .bayan-content .bayan-img {
         max-width: 60%;
